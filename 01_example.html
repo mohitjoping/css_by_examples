@@ -1,0 +1,51 @@
+<!-- hello guys in this code series you will learn different concepts of intermediate CSS. For better understanding run all code of this code series in browser. -->
+
+
+<!-- I think you already know about selectors like universal selector(*), element selctor, id selector, group selector ....  but in this code you  learn about combinators in css.
+
+let's take a look at combinators. 
+
+combinators : is somthing that explains the relationship between the selectors.
+
+There are four different combinators :- 
+1. Descendant combinator ->       (white space)
+2. Child combinator ->            ( > ) 
+3. Adjacent sibling combinator -> ( + )
+4. General sibling combinator ->  ( ~ )
+
+-->
+
+<!-- 1. Descendant combinator -> (white space) : as name suggested descendant("purvaj") it will select all child elements   as well as its super child elements -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS BY EXAMPLES</title>
+    <style>
+      div p{
+        /*  use of descendant combinator by using a white space between div and p */
+        background-color: rgb(255, 212, 167);
+        color: rgb(14, 29, 74);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Descendant combinator </h2>
+
+    <p>
+      The descendant combinator  matches all elements that are descendants of a
+      specified element.
+    </p>
+
+    <div>
+      <p>child 1 in the div.</p>
+      <p>child 2 in the div.</p>
+      <section><p>super child in the div.</p></section>
+    </div>
+
+    <p>sibling 1 of a div.</p>
+    <p>sibling 2 of a div.</p>
+  </body>
+</html>
+
+<!-- TASK : Add a super child element in this code and apply css on it by using descendant combinator. -->
